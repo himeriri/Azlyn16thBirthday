@@ -1,0 +1,327 @@
+/* ==============================
+   🌻 PAGE 2
+   ============================== */
+
+body {
+
+    background-color: #89a203;
+
+    font-family: "Playfair Display", serif;
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.page2 {
+
+    width: 90%;
+
+    max-width: 700px;
+
+}
+
+
+/* ==============================
+   🌻 TITLE
+   ============================== */
+
+h1 {
+
+    color: white;
+
+    font-size: 40px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.instruction {
+
+    color: white;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ==============================
+   💌 ENVELOPE CONTAINER
+   ============================== */
+
+.envelope-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 500px;
+
+}
+
+
+/* ==============================
+   💌 ENVELOPE
+   ============================== */
+
+.envelope {
+
+    width: 320px;
+
+    height: 210px;
+
+    position: relative;
+
+    cursor: pointer;
+
+}
+
+
+/* ==============================
+   💌 LETTER
+   ============================== */
+
+.letter {
+    position: absolute;
+
+    width: 290px;
+    height: 420px; /* MUCH taller */
+
+    background-color: #fff8ed;
+
+    left: 15px;
+    bottom: 5px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    border-radius: 5px;
+
+    color: #3d3d3d;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.15);
+
+    z-index: 1;
+
+    transition:
+        transform 0.8s ease,
+        bottom 0.8s ease;
+
+    overflow-y: auto;
+}
+
+
+.letter h2 {
+
+    margin-top: 0;
+
+    color: #6b4f3a;
+
+    font-size: 22px;
+
+}
+
+
+.letter p {
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+.signature {
+
+    font-style: italic;
+
+}
+
+
+/* ==============================
+   ✉️ ENVELOPE FRONT
+   ============================== */
+
+.envelope-front {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 320px;
+
+    height: 210px;
+
+    background-color: #f6d58b;
+
+    border-radius: 5px;
+
+    z-index: 3;
+
+}
+
+
+/* Envelope center decoration */
+
+.envelope-front span {
+
+    position: absolute;
+
+    top: 80px;
+
+    left: 135px;
+
+    font-size: 40px;
+
+}
+
+
+/* ==============================
+   ✉️ ENVELOPE FLAP
+   ============================== */
+
+.envelope-flap {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 0;
+
+    height: 0;
+
+    border-left: 160px solid transparent;
+
+    border-right: 160px solid transparent;
+
+    border-top: 105px solid #e9bd62;
+
+    transform-origin: top center;
+
+    transition: transform 0.8s ease;
+
+    z-index: 4;
+
+}
+
+
+/* ==============================
+   💌 WHEN ENVELOPE OPENS
+   ============================== */
+
+.envelope.open .envelope-flap {
+
+    transform: rotateX(180deg);
+
+}
+
+
+.envelope.open .letter {
+
+    transform: translateY(-180px);
+
+}
+
+
+/* ==============================
+   ✨ CLICK MESSAGE
+   ============================== */
+
+.click-message {
+
+    color: white;
+
+    margin-top: 25px;
+
+    font-size: 16px;
+
+}
+
+
+/* ==============================
+   🎂 NEXT BUTTON
+   ============================== */
+
+#nextButton {
+    display: block;
+
+    margin: 30px auto 0;
+
+    padding: 12px 28px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: white;
+
+    color: #6b4f3a;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+}
+
+
+#nextButton.show {
+    opacity: 1;
+
+    pointer-events: auto;
+
+    transform: translateY(0);
+}
+
+
+#nextButton:hover {
+    transform: scale(1.08);
+}
+
+
+
+#nextButton:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+#nextButton.show {
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+}

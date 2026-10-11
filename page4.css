@@ -1,0 +1,405 @@
+/* ==============================
+   💌 PAGE 4 — FINAL LETTER
+   ============================== */
+
+body {
+    background-color: #89a203;
+
+    font-family: "Playfair Display", serif;
+
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    overflow-x: hidden;
+}
+
+
+/* ==============================
+   🌻 MAIN PAGE
+   ============================== */
+
+.page4 {
+    width: 90%;
+    max-width: 750px;
+
+    position: relative;
+
+    padding: 50px 0;
+}
+
+
+/* ==============================
+   🌻 TITLE
+   ============================== */
+
+h1 {
+    color: white;
+
+    font-size: 42px;
+
+    margin-bottom: 5px;
+
+    animation: fadeDown 1s ease;
+}
+
+
+.subtitle {
+    color: white;
+
+    font-size: 18px;
+
+    margin-top: 0;
+
+    animation: fadeDown 1.2s ease;
+}
+
+
+/* ==============================
+   💌 LETTER
+   ============================== */
+
+.letter {
+
+    background-color: #fff8ed;
+
+    width: 80%;
+
+    max-width: 600px;
+
+    margin: 35px auto 20px;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
+    text-align: left;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+
+    position: relative;
+
+    animation: letterAppear 1.5s ease;
+
+}
+
+
+/* Little paper corner */
+
+.letter::before {
+
+    content: "🌻";
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    font-size: 25px;
+
+}
+
+
+.letter h2 {
+
+    color: #6b4f3a;
+
+    text-align: center;
+
+    font-size: 25px;
+
+    margin-top: 0;
+
+    margin-bottom: 25px;
+
+}
+
+
+.letter p {
+
+    color: #5c5148;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+}
+
+
+.signature {
+
+    text-align: right;
+
+    font-size: 18px !important;
+
+    margin-top: 30px;
+
+    color: #6b4f3a !important;
+
+}
+
+
+/* ==============================
+   🐱🦆 ANIMALS
+   ============================== */
+
+.animals {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    font-size: 40px;
+
+    margin-top: 10px;
+
+}
+
+
+.animals span {
+
+    display: inline-block;
+
+    animation: animalBounce 2s infinite ease-in-out;
+
+}
+
+
+.animals span:nth-child(2) {
+
+    animation-delay: 0.2s;
+
+}
+
+
+.animals span:nth-child(3) {
+
+    animation-delay: 0.4s;
+
+}
+
+
+/* ==============================
+   🌻 FINAL MESSAGE
+   ============================== */
+
+.finalMessage {
+
+    color: white;
+
+    font-size: 27px;
+
+    margin-top: 30px;
+
+    animation: fadeUp 2s ease;
+
+}
+
+
+/* ==============================
+   🔄 REPLAY BUTTON
+   ============================== */
+
+#replayButton {
+
+    margin-top: 10px;
+
+    padding: 11px 25px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: white;
+
+    color: #6b4f3a;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+
+}
+
+
+#replayButton:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+/* =================
+SPARKLES
+   ============================== */
+
+.sparkle {
+
+    position: absolute;
+
+    color: white;
+
+    font-size: 32px;
+
+    animation: sparkleFloat 2s infinite alternate;
+
+}
+
+
+.sparkle1 {
+
+    top: 80px;
+
+    left: 5%;
+
+}
+
+
+.sparkle2 {
+
+    top: 180px;
+
+    right: 5%;
+
+}
+
+
+.sparkle3 {
+
+    bottom: 180px;
+
+    left: 8%;
+
+}
+
+
+.sparkle4 {
+
+    bottom: 100px;
+
+    right: 8%;
+
+}
+
+
+/* ==============================
+   ✨ ANIMATIONS
+   ============================== */
+
+@keyframes sparkleFloat {
+
+    from {
+
+        opacity: 0.3;
+
+        transform: translateY(0) rotate(0deg);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(-12px) rotate(10deg);
+
+    }
+
+}
+
+
+@keyframes fadeDown {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes letterAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px) scale(0.95);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+
+    }
+
+}
+
+
+@keyframes animalBounce {
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-8px);
+
+    }
+
+}

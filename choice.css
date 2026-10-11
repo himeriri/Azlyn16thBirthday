@@ -1,0 +1,261 @@
+/* ==============================
+   💘 AZLYN'S IMPOSSIBLE CHOICE
+   ============================== */
+
+body {
+
+    background-color: #89a203;
+
+    font-family: "Playfair Display", serif;
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+}
+
+
+/* ==============================
+   💘 MAIN PAGE
+   ============================== */
+
+.choice-page {
+
+    width: 90%;
+
+    max-width: 700px;
+
+    position: relative;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* ==============================
+   ✨ TITLE
+   ============================== */
+
+h1 {
+
+    color: white;
+
+    font-size: 40px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.subtitle {
+
+    color: white;
+
+    font-size: 17px;
+
+    margin-top: 5px;
+
+}
+
+
+/* ==============================
+   📜 INTRO
+   ============================== */
+
+.intro {
+
+    background-color: #fff8ed;
+
+    color: #5c5148;
+
+    padding: 35px;
+
+    margin: 30px auto;
+
+    max-width: 550px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    animation: appear 1s ease;
+
+}
+
+
+.intro p {
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+}
+
+
+.intro h2 {
+
+    color: #6b4f3a;
+
+    font-size: 25px;
+
+}
+
+
+.warning {
+
+    font-size: 14px !important;
+
+    margin-top: 25px;
+
+}
+
+
+/* ==============================
+   🎮 BUTTON
+   ============================== */
+
+#beginChoice {
+
+    padding: 13px 30px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: white;
+
+    color: #6b4f3a;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+
+}
+
+
+#beginChoice:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+/* ==============================
+   ✨ SPARKLES
+   ============================== */
+
+.sparkles span {
+
+    position: absolute;
+
+    color: white;
+
+    font-size: 28px;
+
+    animation: sparkle 2s infinite alternate;
+
+}
+
+
+.sparkles span:nth-child(1) {
+    top: 5%;
+    left: 5%;
+}
+
+.sparkles span:nth-child(2) {
+    top: 15%;
+    right: 8%;
+}
+
+.sparkles span:nth-child(3) {
+    top: 45%;
+    left: 2%;
+}
+
+.sparkles span:nth-child(4) {
+    top: 60%;
+    right: 3%;
+}
+
+.sparkles span:nth-child(5) {
+    bottom: 10%;
+    left: 10%;
+}
+
+.sparkles span:nth-child(6) {
+    bottom: 5%;
+    right: 12%;
+}
+
+.sparkles span:nth-child(7) {
+    top: 30%;
+    right: 15%;
+}
+
+.sparkles span:nth-child(8) {
+    bottom: 30%;
+    left: 15%;
+}
+
+
+/* ==============================
+   ✨ ANIMATIONS
+   ============================== */
+
+@keyframes sparkle {
+
+    from {
+
+        opacity: 0.3;
+
+        transform: translateY(0);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(-10px);
+
+    }
+
+}
+
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}

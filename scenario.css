@@ -1,0 +1,376 @@
+/* ==============================
+   🌻 AZLYN'S IMPOSSIBLE CHOICE
+   SCENARIO STYLE
+   ============================== */
+
+body {
+
+    background-color: #89a203;
+
+    font-family: "Playfair Display", serif;
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+/* ==============================
+   📖 MAIN
+   ============================== */
+
+.scenario-page {
+
+    width: 90%;
+
+    max-width: 750px;
+
+    padding: 40px 20px;
+
+    position: relative;
+
+}
+
+
+/* ==============================
+   🔢 SCENARIO NUMBER
+   ============================== */
+
+.scenario-number {
+
+    color: white;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.8;
+
+}
+
+
+/* ==============================
+   🌤️ TITLE
+   ============================== */
+
+h1 {
+
+    color: white;
+
+    font-size: 38px;
+
+    margin-bottom: 30px;
+
+}
+
+
+h2 {
+
+    color: white;
+
+    font-size: 22px;
+
+    margin-top: 35px;
+
+}
+
+
+/* ==============================
+   📖 STORY BOX
+   ============================== */
+
+.story {
+
+    background-color: #fff8ed;
+
+    color: #5c5148;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    line-height: 1.7;
+
+    font-size: 17px;
+
+    animation: appear 0.8s ease;
+
+}
+
+
+.story p {
+
+    margin: 12px 0;
+
+}
+
+
+.emphasis {
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    color: #6b4f3a;
+
+}
+
+
+/* ==============================
+   💘 CHOICES
+   ============================== */
+
+.choices {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.choice-button {
+
+    width: 280px;
+
+    min-height: 130px;
+
+    padding: 20px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background-color: white;
+
+    color: #5c5148;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.choice-button:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.choice-name {
+
+    display: block;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+
+}
+
+
+.choice-description {
+
+    display: block;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+/* ==============================
+   💬 MESSAGE
+   ============================== */
+
+#choiceMessage {
+
+    color: white;
+
+    font-size: 17px;
+
+    margin-top: 25px;
+
+    min-height: 25px;
+
+}
+
+
+/* ==============================
+   ✨ SPARKLES
+   ============================== */
+
+.sparkles span {
+
+    position: fixed;
+
+    color: white;
+
+    font-size: 28px;
+
+    animation: sparkle 2s infinite alternate;
+
+}
+
+
+.sparkles span:nth-child(1) {
+
+    top: 10%;
+
+    left: 8%;
+
+}
+
+
+.sparkles span:nth-child(2) {
+
+    top: 20%;
+
+    right: 10%;
+
+}
+
+
+.sparkles span:nth-child(3) {
+
+    bottom: 20%;
+
+    left: 12%;
+
+}
+
+
+.sparkles span:nth-child(4) {
+
+    bottom: 10%;
+
+    right: 8%;
+
+}
+
+
+.sparkles span:nth-child(5) {
+
+    top: 45%;
+
+    left: 4%;
+
+}
+
+
+.sparkles span:nth-child(6) {
+
+    top: 50%;
+
+    right: 5%;
+
+}
+
+
+/* ==============================
+   ✨ ANIMATIONS
+   ============================== */
+
+@keyframes sparkle {
+
+    from {
+
+        opacity: 0.3;
+
+        transform: translateY(0);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(-8px);
+
+    }
+
+}
+
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ==============================
+   📱 MOBILE
+   ============================== */
+
+@media (max-width: 600px) {
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .story {
+
+        padding: 22px;
+
+        font-size: 15px;
+
+    }
+
+
+    .choice-button {
+
+        width: 100%;
+
+    }
+
+}
